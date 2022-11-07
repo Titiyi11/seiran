@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #57F;
+  box-shadow: 3px 3px 5px 2px #888;
+}
+header h1 {
+  color: #FFF;
+  text-shadow: 2px 2px 2px #555;
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 5;
+  flex-shrink: 1;
+  flex-basis: 400px;
+  margin-left: 2rem;
+}
+header div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+header nav {
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: #EEE;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+@media screen and (max-width: 550px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+main section.cards {
+  display: flex;
+  border: 0px solid rosybrown;
+  width: 100%;
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+main section.cards h4 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+main section.cards p {
+  font-size: 1.25rem;
+}
+main section.cards a {
+  margin: 1rem 0;
+  text-decoration: none;
+  padding: 0.9rem 1.5rem;
+  background-color: #25D;
+  font-size: 1.25rem;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-shadow: 1px 1px 2px #555;
+}
+main section.cards div.card {
+  border: 0px solid #66F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 300px;
+}
+main section.cards div.card img {
+  width: 100%;
+  opacity: 0.65;
+  transition: all 0.2s;
+}
+main section.cards div.card img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+main section.schools {
+  display: flex;
+  border: 0px solid rosybrown;
+  width: 70%;
+  min-height: 80vh;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+main section.schools p {
+  font-size: 1.25rem;
+}
+main section.schools div.school {
+  border: 0px solid #66F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 1791px;
+}
+main section.schools div.school img {
+  width: 100%;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 700px) {
+  main section.second section.cards div.card img {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40vh;
+  justify-content: space-around;
+  background-color: #ddd;
+}
+footer div.logo {
+  display: flex;
+  align-items: center;
+}
+footer div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+footer nav {
+  width: 30%;
+}
+footer nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer nav ul li {
+  flex-basis: 100px;
+}
+footer nav ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.35rem;
+  text-shadow: 1px 1px 2px #999;
+}
+footer section.links a img {
+  width: 5vw;
+  height: 5vw;
+  margin: 0 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(170, 204, 255, 0.4);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #13a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #55D;
+}/*# sourceMappingURL=style1.css.map */
